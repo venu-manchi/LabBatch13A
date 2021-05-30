@@ -1,0 +1,21 @@
+
+
+
+  <div  class="card-item" >
+
+    <mat-card *ngFor="let book of wishList" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)"  >
+      <mat-card-content >
+        <img mat-card-image src="{{srcPath+book?.coverFileName}}" alt="Photo of {{book.title}}" >
+
+
+        <strong style="text-align: center;">{{book.title}}</strong>
+        <small>{{book.price}}</small>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Add To Cart</button>
+        <!-- <app-addtowishlist></app-addtowishlist> -->
+      </mat-card-actions>
+    </mat-card>
+
+ </div>

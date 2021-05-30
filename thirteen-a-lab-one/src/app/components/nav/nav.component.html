@@ -1,0 +1,26 @@
+
+<mat-toolbar color="primary">
+  <button mat-raised-button class="example-icon" routerLink="/home" aria-label="Example icon-button with menu icon">
+      <mat-icon>home</mat-icon>Home
+  </button>
+  <!-- <span>My App</span> -->
+  <span class="example-spacer"></span>
+
+
+<button mat-icon-button  routerLink="/my-wishlist" color="accent"><mat-icon>favorite</mat-icon></button>
+         <a href="#" matBadge=""  (click)="toggleBadgeVisibility()"> <mat-icon>favorite</mat-icon></a>
+
+
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+
+
+            <mat-icon matBadge="15" matBadgeColor="warn">
+              <button (click)="gotowishlist()" > home</button>
+            </mat-icon>
+            <span class="cdk-visually-hidden">
+
+            </span>
+
+  </button>
+</mat-toolbar>

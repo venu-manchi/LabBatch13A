@@ -1,0 +1,25 @@
+
+
+  <div  class="card-item"   [class.on-card-list-hover]="isActive" (mouseover)="isActive=true"
+  (mouseout)="isActive=false">
+
+      <mat-card *ngFor="let book of booksList" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)"  >
+        <mat-card-content >
+          <img mat-card-image src="{{srcPath+book?.coverFileName}}" alt="Photo of {{book.title}}" >
+
+
+          <strong style="text-align: center;">{{book.title}}</strong>
+
+          <small>{{book.price}}</small>
+          <button mat-icon-button (click)="getAddToWishlist(book?.bookId)"><mat-icon>favorite</mat-icon> </button>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Add To Cart</button>
+
+
+        </mat-card-actions>
+      </mat-card>
+
+   </div>
+
