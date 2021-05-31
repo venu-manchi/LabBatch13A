@@ -46,6 +46,7 @@ import{MatAutocompleteModule} from '@angular/material/autocomplete';
  import{MatStepperModule} from '@angular/material/stepper';
  import{ MatTabsModule} from '@angular/material/tabs';
  import{MatTableModule} from '@angular/material/table';
+import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 
 
 
@@ -62,7 +63,8 @@ import{MatAutocompleteModule} from '@angular/material/autocomplete';
     FooterComponent,
     CardListComponent,
     AddtocartComponent,
-    AddtowishlistComponent
+    AddtowishlistComponent,
+    MyOrdersComponent
 
 
   ],

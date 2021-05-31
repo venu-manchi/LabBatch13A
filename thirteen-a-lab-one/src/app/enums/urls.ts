@@ -4,5 +4,6 @@ let url = environment.baseUrl + '/api/';
 
 export const BooksUrls = {
     books: url + 'Book',
-    wishList:url+'Wishlist'
+    wishList:url+'Wishlist',
+    Myorders: url + 'Order'
 }
